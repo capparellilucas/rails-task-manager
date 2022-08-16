@@ -1,0 +1,11 @@
+<h1>Hola</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>(<%= task.id %>) - <%= link_to task.title, task_path(task) %> - (<%= task.details %>) - (<%= task.complete %>) -  </li>
+  <% end %>
+</ul>
+
+
+
+<%# <a href=`/tasks/${params[:id]}`>Show</a> %>
